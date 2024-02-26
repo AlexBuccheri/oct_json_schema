@@ -1,0 +1,133 @@
+List of input options that can be defined as `array`
+
+110 options, and one probably needs to manually add some extra fields.
+Ideally add to the source code, such that it is parsed from there.
+
+Common/Important
+-----------------
+# Some important ones, one might consider adding by hand:
+#
+# Interactions, Systems etc
+# KPointsGrid
+# QPointsGrid
+# LatticeVectors
+# Coordinates
+# ReducedCoordinates
+# MeshBlockSize
+# PeriodicBoundaryMask
+# Lsize
+# Volume
+
+
+ALL
+-----------------
+# Interactions
+# StaticExternalPotentials
+# StaticMagneticField
+# StaticElectricField
+# KPointsGrid
+# QPointsGrid
+# KPointsPath
+# KPoints
+# KPointsReduced
+# EMFreqs
+# EMHyperpol
+# AtomsMagnetDirection
+# LatticeParameters
+# LatticeVectors
+# CurrentThroughPlane
+# BerkeleyGW_VmtxelPolarization
+# MaxwellOutput
+# OutputMatrixElements
+# LinearMediumOutput
+# MaxAngularMomentum
+# UnfoldLatticeParameters
+# UnfoldLatticeVectors
+# UnfoldKPointsPath
+# LocalDomains
+# ConvertScalarOperation
+# CasidaSpectrumRotationMatrix
+# TDTDMFrequencies
+# SupercellDimensions
+# MainAxis
+# PhotoelectronSpectrumOutput
+# PhotoelectronSpectrumResolveStates
+# TDOutput
+# TDExcitedStatesToProject
+# PES_spm_points
+# PES_Flux_Offset
+# PES_Flux_Lsize
+# PES_Flux_Face_Dens
+# PES_Flux_EnergyGrid
+# PES_Flux_ThetaK
+# PES_Flux_PhiK
+# PES_Flux_GridTransformMatrix
+# PESMaskSize
+# Species
+# TDFunctions
+# MaxwellFunctions
+# ParticleInitialPosition
+# ParticleInitialVelocity
+# Coordinates
+# ReducedCoordinates
+# SymmetryBreakDir
+# IonsTimeDependentDisplacements
+# Velocities
+# UserDefinedStates
+# TransformStates
+# UserDefinedInitialMaxwellStates
+# DensitytoCalc
+# Occupations
+# InitialSpins
+# MomentumTransfer
+# MaxwellFieldsCoordinate
+# DescribeParticlesModelmb
+# GaugeVectorField
+# TDKickFunction
+# TDPolarization
+# TDPolarizationWprime
+# TDReducedMomentumTransfer
+# TDMomentumTransfer
+# TDEasyAxis
+# TDMultipleMomentumTransfer
+# DFTUBasisStates
+# ABShape
+# TDExternalFields
+# MillerIndicesBasis
+# OCTOptimizeHarmonicSpectrum
+# OCTFilter
+# OCTLaserEnvelope
+# OCTVelocityTarget
+# OCTVelocityDerivatives
+# OCTInitialTransformStates
+# OCTInitialUserdefined
+# OCTTargetUserdefined
+# OCTTargetSpin
+# OCTClassicalTarget
+# OCTMomentumDerivatives
+# OCTPositionDerivatives
+# OCTTargetTransformStates
+# OCTTargetDensityFromState
+# OCTSpatialCurrWeight
+# OCTTdTarget
+# PhotonModes
+# ExternalSourceBesselOutput
+# MaxwellIncidentWaves
+# BesselBeamAxisShift
+# MaxwellAbsorbingBoundaries
+# UserDefinedMaxwellExternalCurrent
+# MaxwellBoundaryConditions
+# UserDefinedConstantSpatialMaxwellField
+# LinearMediumProperties
+# LinearMediumBoxSize
+# MediumCurrentCoordinates
+# GOConstrains
+# CasidaMomentumTransfer
+# Systems
+# Output
+# MeshLocalBlockSize
+# Volume
+# MeshBlockSize
+# RestartOptions
+# PeriodicBoundaryMask
+# Lsize

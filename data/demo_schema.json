@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "CalculationMode": {"type": "string"},
+    "MaximumIter": {"type": "integer",
+      "default": 200
+    },
+    "EigensolverTolerance": {"type": "number", "default": 1e-7},
+    "Radius": {
+      "oneOf": [
+        {"type": "string", "pattern": "^\\d+\\.?\\d*\\*\\w+$"},
+        {"type": "number"}
+      ]
+    },
+    "Coordinates": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": [{"type": "string"}],
+        "minItems": 1
+      },
+      "description": "If <tt>XYZCoordinates</tt>, <tt>PDBCoordinates</tt>, and <tt>XSFCoordinates</tt> were not found, <tt>Octopus</tt> tries to read the coordinates for the atoms from the block <tt>Coordinates</tt>. The format is quite straightforward:   <tt>%Coordinates <br>&nbsp;&nbsp;'C' |      -0.56415 | 0.0 | 0.0 | no <br>&nbsp;&nbsp;'O' | &nbsp;0.56415 | 0.0 | 0.0 | no <br>%</tt>   The first line defines a carbon atom at coordinates (-0.56415, 0.0, 0.0), that is <b>not</b> allowed to move during dynamical simulations. The second line has a similar meaning. This block obviously defines a carbon monoxide molecule, if the input units are <tt>eV_Angstrom</tt>. The number of coordinates for each species must be equal to the dimension of your space (generally 3). Note that in this way it is possible to fix some of the atoms (this is not possible when specifying the coordinates through a <tt>PDBCoordinates</tt> or <tt>XYZCoordinates</tt> file). The last column is optional, and the default is yes. It is always possible to fix <b>all</b> atoms using the <tt>MoveIons</tt> directive."
+    }
+  },
+  "required": [
+    "CalculationMode (for example)"
+  ]
+}
